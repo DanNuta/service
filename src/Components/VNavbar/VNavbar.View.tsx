@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from "react";
 import * as Style from "./VNavbar.style";
-//import bars from "../../icons/bars/bars.svg";
+import bars from "../../icons/bars/bars.svg";
 import cancel from "../../icons/bars/cancel.svg";
 import {Link} from "react-router-dom";
 import { VButton } from "../VButton/VButton";
@@ -47,7 +47,7 @@ export const VNavbarView: React.FC<PropsWithChildren<Props>> = (props: PropsWith
 
             
               <Style.LogoLi><Style.AHref>logo</Style.AHref></Style.LogoLi>
-              <Style.BarsElement onClick={props.toggleBard}><Style.AHref><img src={cancel} alt="" /></Style.AHref></Style.BarsElement>
+              <Style.BarsElement onClick={props.toggleBard}><Style.AHref><img src={bars} alt="" /></Style.AHref></Style.BarsElement>
             
 
 
