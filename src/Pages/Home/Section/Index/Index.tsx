@@ -56,7 +56,7 @@ export const Index: React.FC = () => {
 
   return (
     <>
-      <Style.SectionIndex id="Home">
+      <Style.SectionIndex id="Accueil">
         <img className="bg_images" src={imgBg} alt="" />
 
         <Style.TextHover>

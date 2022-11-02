@@ -152,7 +152,7 @@ export const GaleryView: React.FC = (props) =>{
 
 
     return (
-        <Style.SectionGalery id="Portfolio">
+        <Style.SectionGalery id="Nos%20Travaux">
             <h1 className="title">Galery</h1>
 
 

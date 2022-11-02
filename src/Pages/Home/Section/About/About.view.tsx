@@ -6,7 +6,7 @@ import carAbout from "../../../../Icons/about/about.png";
 export const AboutView: React.FC = () =>{
 
     return (
-        <Styled.About id="Despre noi">
+        <Styled.About id="Qui%20sommes-nous">
             <h1 className="title_desktop">Despre noi</h1>
 
             <Styled.LeftPhoto>
