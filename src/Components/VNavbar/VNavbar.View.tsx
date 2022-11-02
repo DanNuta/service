@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from "react";
 import * as Style from "./VNavbar.style";
-import bars from "../../icons/bars/bars.svg";
-import cancel from "../../icons/bars/cancel.svg";
+import bars from "../../Icons/bars/bars.svg";
+import cancel from "../../Icons/bars/cancel.svg";
 import {Link} from "react-router-dom";
 import { VButton } from "../VButton/VButton";
 import email from "../../Icons/contact/email.svg";
