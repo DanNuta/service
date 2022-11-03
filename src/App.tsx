@@ -24,7 +24,7 @@ function App() {
 
    
 
-   {loadContent ? <p>Loadedd</p> :
+   
    
    <>
     <GlobalStyle/>
@@ -36,7 +36,7 @@ function App() {
    
    </> 
    
-   }
+   
     
     </>
   )
