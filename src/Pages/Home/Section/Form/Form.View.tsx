@@ -46,19 +46,19 @@ export const FormView: React.FC<PropsWithChildren<Props>> = (props: PropsWithChi
 
             <div className="form_input">
                     <div>
-                        <InputView name="nume" error={props.errorNume}  value={props.nume}  onChange={(e) => props.numeFn(e)} labelText="Nume" placeholder="Nume" type="text" id="Nume"/>
-                        <InputView name="email" error={props.errorEmail} value={props.email}  onChange={(e) => props.emailFn(e)} labelText="Email" placeholder="Email" type="email" id="Email"/>
+                        <InputView name="nume" error={props.errorNume}  value={props.nume}  onChange={(e) => props.numeFn(e)} labelText="Votre nom" placeholder="Votre nom" type="text" id="Nume"/>
+                        <InputView name="email" error={props.errorEmail} value={props.email}  onChange={(e) => props.emailFn(e)} labelText="Votre email" placeholder="Votre email" type="email" id="Email"/>
                     </div>
 
                     <div>
-                        <InputView name="prenume" error={props.errorPrenume} value={props.prenume}  onChange={(e) => props.prenumeFn(e)} labelText="Prenume" placeholder="Prenume" type="text" id="prenume"/>
-                        <InputView name="telefon" error={props.errorTel}  value={props.telephon} onChange={(e) => props.telephonFn(e)} labelText="Telefon" placeholder="Numar de telefon" type="tel" id="Telefon"/>
+                        <InputView name="prenume" error={props.errorPrenume} value={props.prenume}  onChange={(e) => props.prenumeFn(e)} labelText="Votre prénom " placeholder="Votre prénom " type="text" id="prenume"/>
+                        <InputView name="telefon" error={props.errorTel}  value={props.telephon} onChange={(e) => props.telephonFn(e)} labelText="Votre téléphone " placeholder="Votre téléphone " type="tel" id="Telefon"/>
                     </div>
 
             </div>
 
                 <div className="textarea">
-                        <InputView name="mesaj" error={props.errorMessage} value={props.message} onChange={(e) => props.messageFn(e)} labelText="Mesaj" placeholder="Mesaj" type="texarea" id="Mesaj"/>
+                        <InputView name="mesaj" error={props.errorMessage} value={props.message} onChange={(e) => props.messageFn(e)} labelText="Mesaj" placeholder="Votre message" type="texarea" id="Mesaj"/>
                 </div>
 
                  <Style.Button  >{props.pending ? "Sending..." : "Contacteaza-ne"}</Style.Button>

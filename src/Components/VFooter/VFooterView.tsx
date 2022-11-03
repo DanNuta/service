@@ -53,7 +53,7 @@ export const VFooter: React.FC<PropsWithChildren<Props>> = (props: PropsWithChil
 
 
                 <ul className="urmariti">
-                    <li>Urmăriți-ne pe:</li>
+                    <li>Suivez-nous:</li>
                     <li><Style.Href target="_blank" href="https://www.facebook.com/VillefrancheReprogrammation"><img src={facebook} alt=""  /></Style.Href></li>
                     <li></li>
                     <li></li>
