@@ -14,14 +14,16 @@ export const SocialMediaView: React.FC<PropsWithChildren<Props>> = (props: Props
     <Style.SocialMedia>
 
         <Style.ArrowDown>
-            <Style.ImageDown src={down}></Style.ImageDown>
+
+        <a href="#Qui%20sommes-nous"><Style.ImageDown src={down}></Style.ImageDown></a>
+            
         </Style.ArrowDown>
 
       <Style.SocialIcon>
 
         <Style.SocialMediaDiv width="35%"></Style.SocialMediaDiv>
 
-            <Style.ImageDown src={facebook}></Style.ImageDown>
+        <a href="https://www.facebook.com/VillefrancheReprogrammation" target="_blank"><Style.ImageDown src={facebook}></Style.ImageDown></a>
 
             <Style.SocialMediaDiv width="15%"></Style.SocialMediaDiv>
             <Style.ImageDown src={facebook}></Style.ImageDown>

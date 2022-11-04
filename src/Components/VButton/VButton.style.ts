@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ColorBg } from "../../Css/Varibla";
 
 
 
@@ -22,9 +23,11 @@ export const Button = styled.a<Props>`
     ${props => !props.bg && "border: 1px solid white"};
     cursor: pointer;
     transition: all .5s;
+    border: 1px solid white;
 
     &:hover{
-        box-shadow: inset 160px 0 0 0 #54b3d6;
-        
+        box-shadow: inset 160px 0 0  ${props => props.bg ? ColorBg.primaryColor : "white"};
+        border: 1px solid ${props => props.bg ? ColorBg.primaryColor : "trasnparent"};
+        color: ${props => props.bg ? "white" : ColorBg.primaryColor};
     }
 `

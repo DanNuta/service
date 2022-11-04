@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../../Css/BreackPoints";
 
 
 type Props = {
@@ -10,6 +11,12 @@ display: flex;
 flex-direction: column;
 margin-bottom: 45px;
 position: relative;
+
+${theme.breakpoints.up("md")}{
+    margin-bottom: 60px;
+}
+
+
 
 
 img{

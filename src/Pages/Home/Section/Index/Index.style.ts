@@ -41,12 +41,20 @@ left: 0;
 transform: translateY(-50%);
 padding: 0 20px ;
 
+${theme.breakpoints.up("md")}{
+    width: 90%;
+    margin: auto;
+    max-width: ${Width.maxWidth};
+}
+
+
 
 .btn_desk{
     display: none;
 
     ${theme.breakpoints.up("md")}{
         display: block;
+       
     }
 }
 
@@ -83,8 +91,7 @@ export const TextElement = styled.div`
 
 ${theme.breakpoints.up("md")}{
     
-    width: 90%;
-    margin: auto;
+    width: 40%;
     padding: 0 20px;
     
 

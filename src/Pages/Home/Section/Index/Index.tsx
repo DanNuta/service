@@ -16,8 +16,6 @@ import { SocialMediaView } from "../../../../Components/SocialMedia/SocialMedia.
 
 const bgImages = [bg, bg2, bg3];
 
-console.log(bgImages.length)
-
 export const Index: React.FC = () => {
   const [pxTouchState, setPxTouchState] = useState(0);
   const [imgBg, setImgBg] = useState(bgImages[0]);
@@ -73,8 +71,7 @@ export const Index: React.FC = () => {
         <Style.TextHover>
           <Style.TextElement>
             <h1>
-              WELL RICH intră în forță pe piața Republicii Moldova aducând noi
-              tendințe și viziuni!
+               GowPerformance spécialiste en reprogrammation moteur, optimisation moteur, conversion éthanol E85
             </h1>
 
             <div className="btn_desk">
@@ -114,7 +111,7 @@ export const Index: React.FC = () => {
           <img src={arrow_right} alt="right" /> */}
         </div>
 
-         <SocialMediaView length={bgImages.length} index={indexImg + 1}/>
+         <SocialMediaView length={bgImages.length} index={curentImg + 1}/>
 
 
       </Style.SectionIndex>

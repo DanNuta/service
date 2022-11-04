@@ -96,6 +96,8 @@ li{
 
 export const Href = styled.a`
 
+text-transform: uppercase;
+
 `;
 
 export const Li = styled.li`

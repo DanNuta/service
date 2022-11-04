@@ -42,7 +42,7 @@ padding: 0  20px 45px 20px;
     ${theme.breakpoints.up("md")}{
         display: flex;
         flex-direction: column;
-        gap: 30px 30px;
+       
         align-items: center;
         width: 50%;
 
@@ -67,7 +67,6 @@ padding: 0  20px 45px 20px;
                     width: 100%;
                     display: flex;
                     flex-direction: column;
-                    gap: 30px;
                 }
                 
                
@@ -83,7 +82,7 @@ padding: 0  20px 45px 20px;
 
 export const Button = styled.button`
 background-color: transparent;
-padding: 14px 22px;
+padding: 14px 90px;
 border: none;
 font-weight: bold;
 color: white;
@@ -93,7 +92,7 @@ transition: .3s;
 &:hover{
     
     color: ${ColorBg.primaryColor};
-    box-shadow: inset 160px 0 0 0 white;
+    box-shadow: inset 240px 0 0 0 white;
     
 }
 `;

@@ -10,7 +10,7 @@ type Props = {
 }
 
 
-const navbar = ["Accueil", "Qui sommes-nous", "Nos Travaux", "Contactez-nous"];
+const navbar = ["Accueil", "Qui sommes-nous", "Nos Travaux", "prestations de service", "Contactez-nous"];
 
 
 export const VFooter: React.FC<PropsWithChildren<Props>> = (props: PropsWithChildren<Props>) =>{
@@ -19,10 +19,11 @@ export const VFooter: React.FC<PropsWithChildren<Props>> = (props: PropsWithChil
     return (
 
         <Style.Footer>
+            
 
 
             <Style.Map>
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2712.420832524765!2d27.59282611586084!3d47.169196526083574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cafb7f92ce0003%3A0x3a77ac5cf5817840!2zU3RyYWRhIE1hcnRhLCBJYciZaSwgUm9tw6JuaWE!5e0!3m2!1sro!2s!4v1667047607928!5m2!1sro!2s"></iframe>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2772.1334356975253!2d4.713428315538438!3d45.98856497911065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f485181a6422fd%3A0xf514453938dbd83e!2sRue%20de%20la%20Paix%2C%2069400%20Villefranche-sur-Sa%C3%B4ne%2C%20Fran%C5%A3a!5e0!3m2!1sro!2s!4v1667598859379!5m2!1sro!2s"></iframe>
             </Style.Map>
 
 
@@ -40,13 +41,13 @@ export const VFooter: React.FC<PropsWithChildren<Props>> = (props: PropsWithChil
 
                 <ul>
                 {navbar.map((item, i) =>{
-                     return <Style.Li key={i}><Style.Href href={`#${item}`}>{item}</Style.Href></Style.Li>
+                     return <Style.Li key={i}><Style.Href className="footer_link" href={`#${item}`}>{item}</Style.Href></Style.Li>
                })}
                 </ul>
 
 
                 <ul className="contact">
-                    <li>Contacte</li>
+                    <li>Contact</li>
                     <li><span><img src={telefon} alt="" /></span><span><Style.Href href="tel:+33 06.67.05.43.84">+33 06.67.05.43.84</Style.Href></span></li>
                     <li><span><img src={email} alt="" /></span> <span>gowperformance@gmail.com</span></li>
                 </ul>
@@ -66,7 +67,7 @@ export const VFooter: React.FC<PropsWithChildren<Props>> = (props: PropsWithChil
 
 
             <div className="all_right">
-                <p>© 2021 All rights reserved.</p>
+                <p>© 2021 Tous les droits sont réservés.</p>
             </div>
 
 
