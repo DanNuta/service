@@ -13,13 +13,15 @@ export const Contact = styled.div`
 
 display: none;
 
+
 ${theme.breakpoints.up("md")}{
 
     display: flex;
     align-items: center;
     justify-content: center;
     height: 75px;
-    
+    position: relative;
+    z-index:999;
     background-color: ${ColorBg.primaryColor};
     
     ul{

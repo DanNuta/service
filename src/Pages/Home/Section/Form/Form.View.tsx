@@ -35,7 +35,7 @@ export const FormView: React.FC<PropsWithChildren<Props>> = (props: PropsWithChi
     const form = useRef<HTMLFormElement | null>(null)
 
     return <Style.Form id="Contactez-nous" ref={form} onSubmit={(e) => props.data(e, form)}>
-          <h1 className="title">Contacteaza-ne</h1>
+          <h1 className="title">Contactez-nous</h1>
 
           <div className="form_photo">
 
@@ -61,7 +61,7 @@ export const FormView: React.FC<PropsWithChildren<Props>> = (props: PropsWithChi
                         <InputView name="mesaj" error={props.errorMessage} value={props.message} onChange={(e) => props.messageFn(e)} labelText="Mesaj" placeholder="Votre message" type="texarea" id="Mesaj"/>
                 </div>
 
-                 <Style.Button  >{props.pending ? "Sending..." : "Contacteaza-ne"}</Style.Button>
+                 <Style.Button  >{props.pending ? "Sending..." : "Contact"}</Style.Button>
             </div>
 
 

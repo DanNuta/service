@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import * as Style from "./Index.style";
 import bg from "../../../../Icons/bg/bg.png";
 import { Container, Grid } from "@mui/material";
@@ -14,7 +14,9 @@ import insta from "../../../../Icons/social_media/instagram.svg";
 import facebook from "../../../../Icons/social_media/facebook.svg";
 import { SocialMediaView } from "../../../../Components/SocialMedia/SocialMedia.View";
 
-const bgImages = [bg, bg2, bg3, bg, bg2, bg3];
+const bgImages = [bg, bg2, bg3];
+
+console.log(bgImages.length)
 
 export const Index: React.FC = () => {
   const [pxTouchState, setPxTouchState] = useState(0);
@@ -22,42 +24,51 @@ export const Index: React.FC = () => {
   const [translate, setTranslate] = useState(0);
   const [indexImg, setIndexImg] = useState(1);
 
-  const touchMove = (e: React.TouchEvent<HTMLDivElement>) => {
-    const value = window.screen.width - e.changedTouches[0].clientX;
+  const [curentImg, setCurentImg] = useState(0);
 
-    if (pxTouchState > 300) {
-      setPxTouchState((prev) => (prev = 300));
-    } else {
-      setPxTouchState((prev) => value);
-    }
-  };
+
+  useEffect(() =>{
+    const intervaId =  setInterval(() =>{
+     setCurentImg(prev => {
+        if(prev === bgImages.length-1){
+          return prev = 0;
+        }else{
+          return prev+1;
+        }
+      })
+
+
+      clearInterval(intervaId)
+     
+    }, 5000)
+
+  }, [curentImg])
+
+
 
 
  
 
   // setPxTouchState(prev => prev = move);
 
-  const touchStart = (e: any, index: number) => {
-    const elementSlide = document.querySelector(".element_slide");
-    const w = elementSlide?.getBoundingClientRect().width;
-
-    if (w !== undefined) {
-      setImgBg(e.target.src);
-
-      setTranslate((prev) => {
-        return (prev += w);
-      });
-
-      console.log(e.target.src);
-    }
-
-    setIndexImg(index)
-  };
+  
 
   return (
     <>
       <Style.SectionIndex id="Accueil">
-        <img className="bg_images" src={imgBg} alt="" />
+        {/* <img className="bg_images" src={imgBg} alt="" /> */}
+
+     <Style.ComponentsImgSlider>
+
+        {bgImages.map((item, index) => {
+          return (
+            <Style.DivImg animate={index === curentImg ? "active" : ""} key={index}>
+                {index === curentImg && <img src={item} />}
+            </Style.DivImg>
+          )
+        })}
+
+    </Style.ComponentsImgSlider>
 
         <Style.TextHover>
           <Style.TextElement>
@@ -66,14 +77,15 @@ export const Index: React.FC = () => {
               tendințe și viziuni!
             </h1>
 
-            
-              <VButton color="black" bg="white" href="#Contacte">
+            <div className="btn_desk">
+              <VButton color="black" bg="white" href="#Contactez-nous">
                 Contacteaza-ne
               </VButton>
+            </div>
            
           </Style.TextElement>
 
-          <Style.TouchEventElement
+          {/* <Style.TouchEventElement
             move={pxTouchState}
             onTouchMove={(e) => touchMove(e)}
           >
@@ -88,7 +100,7 @@ export const Index: React.FC = () => {
                 </Style.ImgTouchElement>
               );
             })}
-          </Style.TouchEventElement>
+          </Style.TouchEventElement> */}
 
           <div className="btn">
             <VButton color="black" bg="white" href="#Contacte">

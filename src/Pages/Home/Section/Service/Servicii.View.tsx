@@ -49,11 +49,11 @@ const serviciiItem = [
 
 export const Servicii: React.FC = (props: PropsWithChildren) =>{
 
-    return <Style.Servicii>
+    return <Style.Servicii id="prestations%20de%20service">
 
         <Style.MarginElement>
 
-           <h1 className="title">Servicii</h1>
+           <h1 className="title">Prestations de service</h1>
 
 
            <Style.ServiciiElement>

@@ -153,7 +153,7 @@ export const GaleryView: React.FC = (props) =>{
 
     return (
         <Style.SectionGalery id="Nos%20Travaux">
-            <h1 className="title">Galery</h1>
+            <h1 className="title">Nos Travaux</h1>
 
 
             <Style.SliderGalery slide={stateTrasnlate}

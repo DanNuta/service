@@ -6,7 +6,8 @@ import {Width} from "../../../../Css/Varibla";
 type Props = {
     move?: number,
     check?: boolean,
-    mb?: string
+    mb?: string,
+    animate?: string
 }
 
 
@@ -40,6 +41,15 @@ left: 0;
 transform: translateY(-50%);
 padding: 0 20px ;
 
+
+.btn_desk{
+    display: none;
+
+    ${theme.breakpoints.up("md")}{
+        display: block;
+    }
+}
+
 ${theme.breakpoints.up("md")}{
     display: flex;
     align-items: center;
@@ -72,10 +82,10 @@ export const TextElement = styled.div`
 
 
 ${theme.breakpoints.up("md")}{
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(13.5px);
-    padding: 100px 150px 100px 20px;
-    width: 60%;
+    
+    width: 90%;
+    margin: auto;
+    padding: 0 20px;
     
 
     h1{
@@ -106,7 +116,7 @@ ${theme.breakpoints.up("md")}{
     right: 0;
     width: 45%;
     display: flex;
-    overflow-x: scroll;
+    
     
    
 }
@@ -152,8 +162,8 @@ background-color: green;
 
 img{
     height: 100%;
-        width: 100%;
-        object-fit: cover;
+    width: 100%;
+    object-fit: cover;
 }
 
 
@@ -213,6 +223,38 @@ span{
 
 }
 `
+
+
+
+
+// slider component img
+
+
+export const ComponentsImgSlider = styled.div`
+  position: relative;
+  height: 100vh;
+  min-width: 100%;
+  
+`
+
+
+export const DivImg = styled.div<Props>`
+   position: absolute;
+   transition-duration: .7s;
+   opacity: ${props => props.animate ? 1 : .5};
+   transform: ${props => props.animate && "scale(1.08)"};
+   min-width: 100%;
+   height: 100%;
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+  
+  `
 
 
 

@@ -15,7 +15,7 @@ type Props = {
 }
 
 
-const navbar = ["Accueil", "Qui sommes-nous", "Nos Travaux", "Contactez-nous"];
+const navbar = ["Accueil", "Qui sommes-nous", "Nos Travaux", "prestations de service", "Contactez-nous"];
 
 
 
@@ -35,7 +35,7 @@ export const VNavbarView: React.FC<PropsWithChildren<Props>> = (props: PropsWith
       <Style.Contact>
 
       <ul>
-          <li><img src={email} alt="email"  />index@gmail.com</li>
+          <li><img src={email} alt="email"  />gowperformance@gmail.com</li>
           <li><img src={tel} alt="telefon"  /><a href="tel:++33 06.67.05.43.84">+33 06.67.05.43.84</a></li>
       </ul>
 
