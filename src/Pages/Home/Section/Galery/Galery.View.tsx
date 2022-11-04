@@ -10,73 +10,19 @@ const photo = [galery.img1, galery.img2, galery.img3, galery.img4];
 export const GaleryView: React.FC = (props) =>{
 
 
+    const dimension = window.screen.width;
+
+
     const [stateTrasnlate, setStateTrasnlate] = useState(0);
 
-    const [sliderWidth, setSliderWidth] = useState("530px")
+    const [curretItem, setCurentItem] = useState(2);
+
+    const [sliderWidth, setSliderWidth] = useState(0);
 
 
     const [mouveState, setMouveState] = useState(0);
-    let clientX = 0;
-    
-
-    const touchStart = (e: React.TouchEvent<HTMLDivElement>) =>{
-
-        clientX = e.changedTouches[0].clientX;
-
-        console.log(e)
-        
-    }
-
-
-
-    const touchMouve = (e: React.TouchEvent<HTMLDivElement>) =>{
-
-       const w =  (clientX - e.changedTouches[0].clientX);
-
-       console.log(w)
-
-
-        setStateTrasnlate(prev => {return prev = w});
-
-        
-    }
-
-
-    const touchEnd = (e: React.TouchEvent<HTMLDivElement>) =>{
-
-        const imgGalery = document.querySelector(".galery_img");
-        const w = imgGalery?.getBoundingClientRect().width;
-       
-
-       
-        if(w !== undefined){
-
-            const l = w * photo.length;
-            
-            if(mouveState > l){
-                setMouveState(prev => {
-                    return prev = l
-                })
-
-                console.log(mouveState, "Mouse");
-
-            }else{
-                setMouveState(prev => {
-                    return prev = stateTrasnlate
-                })
-
-
-                console.log(stateTrasnlate, "MousePX")
-            }
-
-
-        }
-
-    }
-
-
-
-    const dimension = window.screen.width;
+   
+           // "galery_img"
     const length = photo.length % 3;
 
 
@@ -85,23 +31,41 @@ export const GaleryView: React.FC = (props) =>{
         const w = imgGalery?.getBoundingClientRect().width;
        
 
-
+       if(dimension > 900){
         if( w !== undefined){
             let l = w * (photo.length-1);
             const total = length * w;
 
 
-            if(total == stateTrasnlate){
-                console.log(total, length)
-                setStateTrasnlate(prev => {
+            if(total == sliderWidth){
+               
+                setSliderWidth(prev => {
                     return prev = 0;
                 })
             }else{
-                setStateTrasnlate(prev => {
+                setSliderWidth(prev => {
                     return prev +=w;
                 })
             }
         }
+    }else{
+
+        if( w !== undefined){
+            let l = w * (photo.length-1);
+
+            setSliderWidth(prev => {
+                if(prev === l){
+                    return prev = 0;
+                }else{
+                    return prev += w;
+                }
+            })
+
+            
+        }
+        
+       
+    }
     }
 
 
@@ -112,42 +76,47 @@ export const GaleryView: React.FC = (props) =>{
     const btnPrev = () =>{
         const imgGalery = document.querySelector(".galery_img");
         const w = imgGalery?.getBoundingClientRect().width;
-
        
+
+       if(dimension > 900){
+        if( w !== undefined){
+            let l = w * (photo.length-1);
+
+            console.log(l, w,  "length")
+            
+            const total = length * w;
+
+
+            if(sliderWidth == 0){
+
+                setSliderWidth(prev => {
+                    return prev = total;
+                })
+            }else{
+                setSliderWidth(prev => {
+                    return prev -=w;
+                })
+            }
+        }
+    }else{
 
         if( w !== undefined){
             let l = w * (photo.length-1);
 
-           
+            setSliderWidth(prev => {
+                if(prev === 0){
+                    return prev = l;
+                }else{
+                    return prev -= w;
+                }
+            })
 
-
-            if(stateTrasnlate === length * w){
-                   
-                console.log(stateTrasnlate)
-                setStateTrasnlate(prev => {
-                    return prev -=w;
-                })
-            }else{
-                setStateTrasnlate(prev => {
-                    return prev =  length * w;
-                })
-            }
+            
         }
+        
+       
     }
-
-
-
-
-
-
-
-
-
-
-    
-
-  
-
+    }
 
 
 
@@ -156,16 +125,17 @@ export const GaleryView: React.FC = (props) =>{
             <h1 className="title">Nos Travaux</h1>
 
 
-            <Style.SliderGalery slide={stateTrasnlate}
-                                onTouchStart={(e) => touchStart(e)}
-                                onTouchMove={(e) => touchMouve(e)}
-                                onTouchEnd={(e) => touchEnd(e)}
-                                sliderPX={sliderWidth}
+            <Style.SliderGalery slide={sliderWidth}
                                 dimension={dimension}
                                 >
 
                 {photo.map((item, i) => {
-                    return(<Style.ImgesItem    key={i} className="galery_img"><img src={item}/></Style.ImgesItem>)
+                    return(<Style.ImgesItem 
+                                            key={i} 
+                                            className={dimension > 900 && i === curretItem ? "galery_img active" : "galery_img"}
+                            >
+                            <img src={item}/>
+                         </Style.ImgesItem>)
                 })}
                 
             </Style.SliderGalery>

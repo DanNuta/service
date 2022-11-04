@@ -6,7 +6,7 @@ import {theme} from "../../../../Css/BreackPoints";
 
 type Props = {
     slide?: number,
-    sliderPX?: string ,
+    sliderPX?: number ,
     dimension?: number
 }
 
