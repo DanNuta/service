@@ -60,6 +60,7 @@ ${theme.breakpoints.up("md")}{
 
     .about_text{
         margin: 40px 0;
+        color: ${ColorBg.primaryColor};
     }
 }
 
@@ -70,6 +71,7 @@ ${theme.breakpoints.up("md")}{
 
     ${theme.breakpoints.up("md")}{
         display: block;
+        color: ${ColorBg.primaryColor};
         
     }
 }

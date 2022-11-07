@@ -2,10 +2,10 @@ import React, {useEffect, useState} from "react";
 import * as Style from "./Galery";
 import prevBtn from "../../../../Icons/arrow/next.svg";
 import nextBtn from "../../../../Icons/arrow/prev.svg";
-import {galery} from "../../../../Icons/icon";
+
+import {galery} from "../../../../Icons/icon"
 
 
-const photo = [galery.img1, galery.img2, galery.img3, galery.img4];
 
 export const GaleryView: React.FC = (props) =>{
 
@@ -23,7 +23,9 @@ export const GaleryView: React.FC = (props) =>{
     const [mouveState, setMouveState] = useState(0);
    
            // "galery_img"
-    const length = photo.length % 3;
+    const length = galery.length % 3;
+
+
 
 
     const btnNext = () =>{
@@ -33,25 +35,35 @@ export const GaleryView: React.FC = (props) =>{
 
        if(dimension > 900){
         if( w !== undefined){
-            let l = w * (photo.length-1);
+            let l = w * (galery.length-1);
             const total = length * w;
 
 
-            if(total == sliderWidth){
-               
+            if(curretItem == galery.length-1){ 
                 setSliderWidth(prev => {
                     return prev = 0;
                 })
+
+                setCurentItem(prev => {
+                    return prev = 2;
+                })
+
             }else{
                 setSliderWidth(prev => {
-                    return prev +=w;
+                    return prev +=w;    
                 })
+
+                setCurentItem(prev => {
+                    return prev+1;
+                })
+
+
             }
         }
     }else{
 
         if( w !== undefined){
-            let l = w * (photo.length-1);
+            let l = w * (galery.length-1);
 
             setSliderWidth(prev => {
                 if(prev === l){
@@ -80,28 +92,31 @@ export const GaleryView: React.FC = (props) =>{
 
        if(dimension > 900){
         if( w !== undefined){
-            let l = w * (photo.length-1);
-
-            console.log(l, w,  "length")
-            
+            let l = w * (galery.length-1);
             const total = length * w;
 
-
             if(sliderWidth == 0){
-
                 setSliderWidth(prev => {
-                    return prev = total;
+                    return prev = l;
+                })
+
+                setCurentItem(prev => {
+                    return prev = galery.length-1;
                 })
             }else{
                 setSliderWidth(prev => {
                     return prev -=w;
+                })
+
+                setCurentItem(prev => {
+                    return prev-1;
                 })
             }
         }
     }else{
 
         if( w !== undefined){
-            let l = w * (photo.length-1);
+            let l = w * (galery.length-1);
 
             setSliderWidth(prev => {
                 if(prev === 0){
@@ -129,7 +144,7 @@ export const GaleryView: React.FC = (props) =>{
                                 dimension={dimension}
                                 >
 
-                {photo.map((item, i) => {
+                {galery.map((item, i) => {
                     return(<Style.ImgesItem 
                                             key={i} 
                                             className={dimension > 900 && i === curretItem ? "galery_img active" : "galery_img"}

@@ -13,8 +13,6 @@ type Props = {
 
 
 
-
-
 export const VServiciiView: React.FC<PropsWithChildren<Props>> = (props: PropsWithChildren<Props>) =>{
 
 
@@ -30,7 +28,7 @@ export const VServiciiView: React.FC<PropsWithChildren<Props>> = (props: PropsWi
 
                <Style.BagroundElement>
                   <img src={props.img} />
-                  <h3>{props.title}</h3>
+                  <h4>{props.title}</h4>
 
 
 

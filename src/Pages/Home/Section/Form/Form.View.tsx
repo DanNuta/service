@@ -35,7 +35,7 @@ export const FormView: React.FC<PropsWithChildren<Props>> = (props: PropsWithChi
     const form = useRef<HTMLFormElement | null>(null)
 
     return <Style.Form id="Contactez-nous" ref={form} onSubmit={(e) => props.data(e, form)}>
-          <h1 className="title">Contactez-nous</h1>
+          <h2 className="title">Contactez-nous</h2>
 
           <div className="form_photo">
 

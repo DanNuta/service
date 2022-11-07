@@ -48,5 +48,6 @@ export const Input = styled.input<Props>`
         padding-left: 12px;
         position: relative;
         top: 0;
+        font-family: 'Rubik', sans-serif;
     }
 `

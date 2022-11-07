@@ -91,7 +91,7 @@ export const TextElement = styled.div`
 
 ${theme.breakpoints.up("md")}{
     
-    width: 40%;
+    width: 70%;
     padding: 0 20px;
     
 
