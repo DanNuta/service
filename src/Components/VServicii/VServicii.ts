@@ -2,6 +2,11 @@ import styled from "styled-components";
 import imageHover from "../../Icons/hover_service/service1.png";
 import {theme} from "../../Css/BreackPoints";
 
+
+
+
+
+
 export const VServicii = styled.div`
 border: 1px solid white;
 width: 100%;
@@ -13,29 +18,6 @@ transition: .5s;
 ${theme.breakpoints.up("md")}{
     width: 400px;
 }
-
- &:hover .hover_element{
-    display: block;
-    padding: 20px;
-    text-align: center;
-    overflow-y: scroll;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url(${imageHover});
-    background-position: center center;
-    background-size: cover;
-    color: white;
-
-    ${theme.breakpoints.up("md")}{
-        
-        transition-duration: 5s;
-    }
- }
 
 `;
 
@@ -71,16 +53,76 @@ ${theme.breakpoints.up("md")}{
    }
 }
 
+`;
+
+
+
+
+
+export const CardServicii = styled.div`
+position: relative;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+transition: transform 1s;
+transform-style: preserve-3d;
+height: 100%;
+
+&:hover{
+    transform: rotateY(.5turn);
+}
+
 
 `;
 
 
-export const HoverElement = styled.div`
-display: none;
 
-
-
+export const CardFront = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: 1px solid white;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 `;
+
+
+export const CardBack = styled.div`
+  display: grid;
+  text-align: center;
+  place-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: 1px solid white;
+  overflow-y: scroll;
+  backface-visibility: hidden;
+  transform: rotateY(.5turn);
+  transform-style: preserve-3d;
+  background-image: url(${imageHover});
+  background-position: center center;
+  padding: 20px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  
+`;
+
+
+
 
 
 
