@@ -26,7 +26,7 @@ export const VServiciiView: React.FC<PropsWithChildren<Props>> = (props: PropsWi
         <Style.ElementCard>
     
           <Style.VServicii>
-            <Style.CardServicii>
+            <Style.CardServicii className="card_content">
 
                <Style.CardFront>
                   <img src={props.img} />

@@ -15,6 +15,10 @@ padding: 11px;
 margin-top: 30px;
 transition: .5s;
 
+&:hover .card_content{
+  transform: rotateY(.5turn);
+}
+
 ${theme.breakpoints.up("md")}{
     width: 400px;
 }
@@ -68,12 +72,6 @@ align-items: center;
 transition: transform 1s;
 transform-style: preserve-3d;
 height: 100%;
-
-&:hover{
-    transform: rotateY(.5turn);
-}
-
-
 `;
 
 
