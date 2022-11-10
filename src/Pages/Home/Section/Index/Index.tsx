@@ -12,7 +12,6 @@ import arrow_right from "../../../../Icons/arrow/next.svg";
 import arrow_left from "../../../../Icons/arrow/prev.svg";
 import insta from "../../../../Icons/social_media/instagram.svg";
 import facebook from "../../../../Icons/social_media/facebook.svg";
-import { SocialMediaView } from "../../../../Components/SocialMedia/SocialMedia.View";
 import mercedes from "../../../../Icons/bg/bg.png";
 const bgImages = [bg, bg2, bg3];
 
@@ -116,7 +115,6 @@ export const Index: React.FC = () => {
           <img src={arrow_right} alt="right" /> */}
         </div>
 
-         <SocialMediaView/>
 
 
       </Style.SectionIndex>
