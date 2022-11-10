@@ -3,6 +3,7 @@ import * as Style from "./VFooter";
 import telefon from "../../Icons/contact/telefon.svg";
 import email from "../../Icons/contact/email.svg";
 import facebook from "../../Icons/social_media/facebook.svg";
+import logo from "../../Icons/logo/logo.svg";
 
 
 type Props = {
@@ -34,7 +35,7 @@ export const VFooter: React.FC<PropsWithChildren<Props>> = (props: PropsWithChil
 
                 <ul>
                     <li className="logo">
-                        <Style.Href href="Home">Logo</Style.Href>
+                        <Style.Href className="logo" href="/"><img src={logo} alt="logo" /></Style.Href>
                     </li>
                 </ul>
 
@@ -48,7 +49,7 @@ export const VFooter: React.FC<PropsWithChildren<Props>> = (props: PropsWithChil
 
                 <ul className="contact">
                     <li>Contact</li>
-                    <li><span><img src={telefon} alt="" /></span><span><Style.Href href="tel:+33 06.67.05.43.84">+33 06.67.05.43.84</Style.Href></span></li>
+                    <li><span><img src={telefon} alt="" /></span><span><Style.Href href="tel:+33 667054384">+33 667054384</Style.Href></span></li>
                     <li><span><img src={email} alt="" /></span> <span>gowperformance@gmail.com</span></li>
                 </ul>
 

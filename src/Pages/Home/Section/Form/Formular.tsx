@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 
 
 export const Form: React.FC<PropsWithChildren> = (props: PropsWithChildren) =>{
+
     
 
     const [numeState, setNumeState] = useState("");
@@ -41,7 +42,7 @@ export const Form: React.FC<PropsWithChildren> = (props: PropsWithChildren) =>{
 
         if(numeState){
                 const validateName = patter["userName"].test(numeState);
-                validateName ? setErrorNumeState("") : setErrorNumeState("Trebuie sa introduci un nume Valid")
+                validateName ? setErrorNumeState("") : setErrorNumeState("Vous devez saisir un numéro valide")
         }
         else{
            
@@ -65,7 +66,7 @@ export const Form: React.FC<PropsWithChildren> = (props: PropsWithChildren) =>{
 
         if(email){
                 const validateName = patter["email"].test(email);
-                validateName ? setErrorState("") : setErrorState("Trebuie sa un email valid")
+                validateName ? setErrorState("") : setErrorState("Vous devez avoir un email valide")
         }
         else{
            
@@ -87,7 +88,7 @@ export const Form: React.FC<PropsWithChildren> = (props: PropsWithChildren) =>{
 
         if(telState){
                 const validateName = patter["telephone"].test(telState);
-                validateName ? setErrorTel("") : setErrorTel("Trebuie sa introduci un numar valid")
+                validateName ? setErrorTel("") : setErrorTel("Vous devez saisir un numéro valide")
         }
         else{
            
@@ -109,7 +110,7 @@ export const Form: React.FC<PropsWithChildren> = (props: PropsWithChildren) =>{
 
         if(messageState){
                 const validateName = patter["message"].test(messageState);
-                validateName ? setErrorMessage("") : setErrorMessage("Trebuie sa introduci un mesaj")
+                validateName ? setErrorMessage("") : setErrorMessage("Vous devez entrer un message")
         }
         else{
            
@@ -130,7 +131,7 @@ export const Form: React.FC<PropsWithChildren> = (props: PropsWithChildren) =>{
 
         if(prenumeState){
                 const validateName = patter["prenume"].test(prenumeState);
-                validateName ? setErrorPrenume("") : setErrorPrenume("Trebuie sa introduci un prenume valid")
+                validateName ? setErrorPrenume("") : setErrorPrenume("Vous devez saisir un prénom valide")
         }
         else{
            
@@ -150,22 +151,13 @@ export const Form: React.FC<PropsWithChildren> = (props: PropsWithChildren) =>{
       console.log(form.current)
 
 
-      if(!patter["userName"].test(numeState)){setErrorNumeState("Trebuie sa introduci un nume Valid")}
-      if(!patter["email"].test(email)){setErrorState("Trebuie sa un email valid")}
-      if(!patter["telephone"].test(telState)){setErrorTel("Trebuie sa introduci un numar valid")}
-      if(!patter["prenume"].test(prenumeState)){setErrorPrenume("Trebuie sa introduci un prenume valid")}
-      if(!patter["message"].test(messageState)){setErrorMessage("Trebuie sa introduci un mesaj")}
+      if(!patter["userName"].test(numeState)){setErrorNumeState("Vous devez avoir un email valide")}
+      else if(!patter["email"].test(email)){setErrorState("Vous devez avoir un email valide")}
+     else if(!patter["telephone"].test(telState)){setErrorTel("Vous devez saisir un numéro valide")}
+     else if(!patter["prenume"].test(prenumeState)){setErrorPrenume("Vous devez saisir un prénom valide")}
+     else if(!patter["message"].test(messageState)){setErrorMessage("Vous devez entrer un message")}
       else{
-          const obj = {
-            numeState,
-            telState,
-            prenumeState,
-            email,
-            messageState
-          }
-
-
-
+         
           setPending(true)
 
           emailjs.sendForm('service_car', 'template_4qrx8aj', form.current, 'user_HhwPsdYuSdseFT3DDVWkC')
@@ -179,17 +171,15 @@ export const Form: React.FC<PropsWithChildren> = (props: PropsWithChildren) =>{
             });
     
           
-
-
-    
-    
-    
-    
           setEmail("")
           setMesageState("")
           setPrenumeState("")
           setTelState("")
-          setNumeState("") 
+          setNumeState("")
+
+
+          window.scrollTo(0, 0)
+          
 
       }
 

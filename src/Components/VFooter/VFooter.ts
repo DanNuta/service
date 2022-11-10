@@ -56,6 +56,14 @@ ${theme.breakpoints.up("md")}{
 }
 
 
+.logo{
+
+    img{
+        width: 150px;
+    }
+}
+
+
 li{
     display: flex;
     text-align: center;
@@ -73,11 +81,16 @@ li{
 
 
 .contact{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
 
     li{
         &:first-child{
             margin-bottom: 15px;
         }
+
+       
 
     }
    

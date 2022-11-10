@@ -9,6 +9,7 @@ export const About = styled.section`
 padding: 0 20px;
 
 
+
 ${theme.breakpoints.up("md")}{
     display: flex;
     gap: 30px;

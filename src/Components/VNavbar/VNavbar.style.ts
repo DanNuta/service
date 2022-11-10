@@ -51,9 +51,19 @@ z-index: 10;
 height: 100%;
 padding: 0 20px;
 
+.logo{
+
+  img{
+
+    width: 150px;
+
+  }
+}
+
 ${theme.breakpoints.up("md")}{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 90%; 
   max-width: 1660px;
   margin: auto;

@@ -13,7 +13,7 @@ import arrow_left from "../../../../Icons/arrow/prev.svg";
 import insta from "../../../../Icons/social_media/instagram.svg";
 import facebook from "../../../../Icons/social_media/facebook.svg";
 import { SocialMediaView } from "../../../../Components/SocialMedia/SocialMedia.View";
-
+import mercedes from "../../../../Icons/bg/bg.png";
 const bgImages = [bg, bg2, bg3];
 
 export const Index: React.FC = () => {
@@ -58,13 +58,18 @@ export const Index: React.FC = () => {
 
      <Style.ComponentsImgSlider>
 
-        {bgImages.map((item, index) => {
+        {/* {bgImages.map((item, index) => {
           return (
             <Style.DivImg animate={index === curentImg ? "active" : ""} key={index}>
                 {index === curentImg && <img src={item} />}
             </Style.DivImg>
           )
-        })}
+        })} */}
+
+
+        <Style.DivImg>
+              <img src={mercedes} />
+            </Style.DivImg>
 
     </Style.ComponentsImgSlider>
 
@@ -111,7 +116,7 @@ export const Index: React.FC = () => {
           <img src={arrow_right} alt="right" /> */}
         </div>
 
-         <SocialMediaView length={bgImages.length} index={curentImg + 1}/>
+         <SocialMediaView/>
 
 
       </Style.SectionIndex>

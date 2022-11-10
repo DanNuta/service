@@ -6,6 +6,7 @@ import {Link} from "react-router-dom";
 import { VButton } from "../VButton/VButton";
 import email from "../../Icons/contact/email.svg";
 import tel from "../../Icons/contact/telefon.svg";
+import logo from "../../Icons/logo/logo.svg";
 
 
 
@@ -36,7 +37,7 @@ export const VNavbarView: React.FC<PropsWithChildren<Props>> = (props: PropsWith
 
       <ul>
           <li><img src={email} alt="email"  />gowperformance@gmail.com</li>
-          <li><img src={tel} alt="telefon"  /><a href="tel:++33 06.67.05.43.84">+33 06.67.05.43.84</a></li>
+          <li><img src={tel} alt="telefon"  /><a href="tel:+33 667054384">+33 667054384</a></li>
       </ul>
 
       </Style.Contact>
@@ -46,7 +47,7 @@ export const VNavbarView: React.FC<PropsWithChildren<Props>> = (props: PropsWith
            
 
             
-              <Style.LogoLi><Style.AHref>logo</Style.AHref></Style.LogoLi>
+              <Style.LogoLi><Style.AHref className="logo" href="/"><img src={logo} alt="logo" /></Style.AHref></Style.LogoLi>
               <Style.BarsElement onClick={props.toggleBard}><Style.AHref><img src={bars} alt="" /></Style.AHref></Style.BarsElement>
             
 

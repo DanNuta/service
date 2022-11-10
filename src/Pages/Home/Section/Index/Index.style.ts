@@ -20,7 +20,7 @@ export const SectionIndex = styled.section`
 height: 100vh;
 width: 100%;
 position: relative;
-top: -25px;
+top: -50px;
 
 
 
@@ -247,11 +247,9 @@ export const ComponentsImgSlider = styled.div`
 
 export const DivImg = styled.div<Props>`
    position: absolute;
-   transition-duration: .7s;
-   opacity: ${props => props.animate ? 1 : .5};
-   transform: ${props => props.animate && "scale(1.08)"};
    min-width: 100%;
    height: 100%;
+   top: -25px;
 
 img{
     width: 100%;

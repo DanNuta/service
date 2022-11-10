@@ -2,7 +2,6 @@ import img1 from "./galery/img1.png";
 import img2 from "./galery/img2.png";
 import img3 from "./galery/img3.png";
 import img4 from "./galery/img4.png";
-import img5 from "./galery/img5.jpg";
 import img6 from "./galery/img6.jpg";
 import img7 from "./galery/img7.jpg";
 import img8 from "./galery/img8.jpg";
@@ -36,7 +35,6 @@ export const galery = [
     img2,
     img3,
     img4,
-    img5, 
     img6,
     img7,
     img8,

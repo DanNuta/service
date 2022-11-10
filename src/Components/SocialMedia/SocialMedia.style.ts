@@ -15,7 +15,7 @@ ${theme.breakpoints.up("md")}{
 position: absolute;
 bottom: 50px;
 display: flex;
-justify-content: space-between;
+justify-content: center;
 width: 90%;
 max-width: ${Width.maxWidth};
 margin: auto;
@@ -27,9 +27,6 @@ color: white;
 `;
 
 
-export const ArrowDown = styled.div`
-  
-`;
 
 
 export const SocialIcon = styled.div`
@@ -54,9 +51,7 @@ export const SocialMediaDiv = styled.div<Props>`
   background-color: white;
 `
 
-export const NumberSlide = styled.div`
 
-`;
 
 export const ImageDown = styled.img`
 
@@ -64,10 +59,6 @@ export const ImageDown = styled.img`
 
 
 
-export const Number = styled.h1`
-`;
 
 
-export const DivIcon = styled.div`
 
-`

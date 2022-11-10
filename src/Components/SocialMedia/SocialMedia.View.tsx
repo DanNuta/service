@@ -13,12 +13,7 @@ export const SocialMediaView: React.FC<PropsWithChildren<Props>> = (props: Props
   return (
     <Style.SocialMedia>
 
-        <Style.ArrowDown>
-
-        <a href="#Qui%20sommes-nous"><Style.ImageDown src={down}></Style.ImageDown></a>
-            
-        </Style.ArrowDown>
-
+      
       <Style.SocialIcon>
 
         <Style.SocialMediaDiv width="35%"></Style.SocialMediaDiv>
@@ -32,9 +27,7 @@ export const SocialMediaView: React.FC<PropsWithChildren<Props>> = (props: Props
       </Style.SocialIcon>
 
 
-      <Style.NumberSlide>
-          <Style.Number>{props.index}/{props.length}</Style.Number>
-      </Style.NumberSlide>
+     
 
     </Style.SocialMedia>
   );
