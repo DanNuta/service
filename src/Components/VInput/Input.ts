@@ -27,6 +27,8 @@ img{
 p{
     color: red;
     margin-top: 3px;
+    position: absolute;
+    top: 35px;
 }
 
 
