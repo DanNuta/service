@@ -68,6 +68,9 @@ top: 100%;
 z-index: 10;
 height: 100%;
 padding: 0 20px;
+background-color: ${ColorBg.primaryColor};
+padding: 10px;
+
 
 .logo{
 
@@ -90,6 +93,7 @@ ${theme.breakpoints.up("md")}{
   left: 50%;
   transform: translateX(-50%);
   height: 50px;
+  background-color: transparent;
 }
 
 `
@@ -103,7 +107,7 @@ color: white;
 width: 100%;
 transform: ${props => props.active ? "translateX(0)" : "translate(100%)"};
 transition: all .3s ease-in-out;
-top: -25px;
+top: 0px;
 bottom: 0;
 left: 0;
 right: 0;
@@ -117,6 +121,7 @@ ${theme.breakpoints.up('md')}{
   background-color: transparent;
   backdrop-filter: blur(0);
   height: 20px;
+  top: -25px;
   padding: 0;
   
   
