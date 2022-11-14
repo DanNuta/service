@@ -20,7 +20,9 @@ export const AboutView: React.FC = () =>{
 
                     <Styled.RightPhoto>
                         <h2 className="title">Qui sommes-nous?</h2>
-                        <p className="about_text">Inițial, începând cu anul 1500, textul Lorem Ipsum era utilizat numai în tipografii, de către culegători. În prezent, datorită apariției și utilizării globale a computerelor, textul Lorem ipsum este utilizat pentru a simula orice text cu aspect neutru, atât pentru lucrări tipografice cât și pentru orice alte lucrări care presupun text - în web design, design pentru logo-uri corporative, ștampile etc. Inițial, începând cu anul 1500, textul Lorem Ipsum era utilizat numai în tipografii, de către culegători. În prezent, datorită apariției și utilizării globale a computerelor, textul.</p>
+                        <p className="about_text">GowPerformance , spécialiste en reprogrammation moteur, optimisation moteur, conversion éthanol E85, nous intervenons quel que soit votre véhicule ou le type de motorisation, essence, diesel et hybride.
+Nous effectuons toutes nos reprogrammations sur-mesure artisanale, en utilisant des outils et logiciels professionnels certifiés et reconnus, afin d'étendre nos prestations sur une large gamme de véhicules. Nos optimisations moteur augmentent non seulement l'agrément de conduite, mais permettent aussi de faire une économie de carburant. La conversion superéthanol E85 des voitures essences offre des avantages considérables avec un amortissement de l'investissement rapidement.
+</p>
                     </Styled.RightPhoto>
 
                 </Styled.About>

@@ -36,6 +36,12 @@ ${theme.breakpoints.up("md")}{
 
 
 export const MarginElement = styled.div`
+
+.motto{
+    text-align: center;
+    margin-top: 20px;
+}
+
    ${theme.breakpoints.up("md")}{
         width: 90%;
         margin: auto;

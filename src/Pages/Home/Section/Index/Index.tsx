@@ -53,9 +53,11 @@ export const Index: React.FC = () => {
                GowPerformance spécialiste en reprogrammation moteur, optimisation moteur, conversion éthanol E85
             </h1>
 
+            <p className="motto">GowPerformance Donnez une seconde chance à votre voiture </p>
+
             <div className="btn_desk">
               <VButton color="black" bg="white" href="#Contactez-nous">
-                Contacteaza-ne
+                Contact
               </VButton>
             </div>
            

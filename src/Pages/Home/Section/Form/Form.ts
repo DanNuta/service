@@ -39,12 +39,25 @@ padding: 0  20px 45px 20px;
     width: 100%;
     position: relative;
 
+
+    .motto{
+        display: none;
+    }
+
     ${theme.breakpoints.up("md")}{
         display: flex;
         flex-direction: column;
        
         align-items: center;
         width: 50%;
+
+
+        .motto{
+            display: block;
+            margin-bottom: 100px;
+            font-style: italic;
+            
+        }
 
         .title{
             text-align: left;

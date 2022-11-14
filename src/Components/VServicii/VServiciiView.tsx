@@ -48,7 +48,7 @@ export const VServiciiView: React.FC<PropsWithChildren<Props>> = (props: PropsWi
            
               
 
-           <VButton href="#Contactez-nous">Contacteaza-ne</VButton>
+           <VButton href="#Contactez-nous">Contact</VButton>
 
 
            

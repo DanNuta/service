@@ -11,6 +11,8 @@ type Props = {
 }
 
 
+const time = new Date().getFullYear();
+
 const navbar = ["Accueil", "Qui sommes-nous", "Nos Travaux", "prestations de service", "Contactez-nous"];
 
 
@@ -68,7 +70,7 @@ export const VFooter: React.FC<PropsWithChildren<Props>> = (props: PropsWithChil
 
 
             <div className="all_right">
-                <p>© 2021 Tous les droits sont réservés.</p>
+                <p>© {time} Tous les droits sont réservés.</p>
             </div>
 
 

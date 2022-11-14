@@ -89,6 +89,13 @@ ${theme.breakpoints.up("md")}{
 export const TextElement = styled.div`
 
 
+.motto{
+    color: white;
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
 ${theme.breakpoints.up("md")}{
     
     width: 70%;

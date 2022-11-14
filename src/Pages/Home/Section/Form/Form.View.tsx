@@ -35,12 +35,14 @@ export const FormView: React.FC<PropsWithChildren<Props>> = (props: PropsWithChi
     const form = useRef<HTMLFormElement | null>(null)
 
     return <Style.Form id="Contactez-nous" ref={form} onSubmit={(e) => props.data(e, form)}>
-          <h2 className="title">Contactez-nous</h2>
+          <h2 className="title">Demandez un devis en remplissant le formulaire de contact</h2>
 
           <div className="form_photo">
 
 
             <div className="form_element">
+
+                <p className="motto">Réactif et professionnel, nous répondons rapidement à vos demandes en matière de reprogrammation de moteur.</p>
 
                
 

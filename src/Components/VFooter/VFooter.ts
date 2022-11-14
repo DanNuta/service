@@ -27,7 +27,7 @@ border: 0;
 margin-bottom: 45px;
 
 ${theme.breakpoints.up("md")}{
-    height: 250px;
+    height: 400px;
 }
 iframe{
     width: 100%;

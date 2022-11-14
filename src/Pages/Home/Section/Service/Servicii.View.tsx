@@ -55,6 +55,8 @@ export const Servicii: React.FC = (props: PropsWithChildren) =>{
 
            <h1 className="title">Prestations de service</h1>
 
+           <p className="motto">Avec GowPerformance, prenez la route en toute confiance !</p>
+
 
            <Style.ServiciiElement>
 
