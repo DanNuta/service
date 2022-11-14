@@ -24,27 +24,10 @@ export const Index: React.FC = () => {
   const [curentImg, setCurentImg] = useState(0);
 
 
-  useEffect(() =>{
-    const intervaId =  setInterval(() =>{
-     setCurentImg(prev => {
-        if(prev === bgImages.length-1){
-          return prev = 0;
-        }else{
-          return prev+1;
-        }
-      })
-
-
-      clearInterval(intervaId)
-     
-    }, 5000)
-
-  }, [curentImg])
-
-
-
-
  
+
+
+
 
   // setPxTouchState(prev => prev = move);
 
@@ -56,14 +39,6 @@ export const Index: React.FC = () => {
         {/* <img className="bg_images" src={imgBg} alt="" /> */}
 
      <Style.ComponentsImgSlider>
-
-        {/* {bgImages.map((item, index) => {
-          return (
-            <Style.DivImg animate={index === curentImg ? "active" : ""} key={index}>
-                {index === curentImg && <img src={item} />}
-            </Style.DivImg>
-          )
-        })} */}
 
 
         <Style.DivImg>
@@ -86,22 +61,7 @@ export const Index: React.FC = () => {
            
           </Style.TextElement>
 
-          {/* <Style.TouchEventElement
-            move={pxTouchState}
-            onTouchMove={(e) => touchMove(e)}
-          >
-            {bgImages.map((item, i) => {
-              return (
-                <Style.ImgTouchElement
-                  className="element_slide"
-                  key={i}
-                  onClick={(e) => touchStart(e, i)}
-                >
-                  <img src={item}></img>
-                </Style.ImgTouchElement>
-              );
-            })}
-          </Style.TouchEventElement> */}
+      
 
           <div className="btn">
             <VButton color="black" bg="white" href="#Contacte">
@@ -110,10 +70,7 @@ export const Index: React.FC = () => {
           </div>
         </Style.TextHover>
 
-        <div className="arrow_element">
-          {/* <img src={arrow_left} alt="prev" />
-          <img src={arrow_right} alt="right" /> */}
-        </div>
+        
 
 
 

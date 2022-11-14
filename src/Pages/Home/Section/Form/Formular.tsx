@@ -27,9 +27,9 @@ export const Form: React.FC<PropsWithChildren> = (props: PropsWithChildren) =>{
     const patter = {
 
         telephone:/^\d{10}$/,
-        userName: /^[a-zA-Z]{3,7}$/,
-        message: /^[a-zA-Z]{3,30}$/,
-        prenume: /^[a-zA-Z]{3,7}$/,
+        userName: /^[a-zA-Z]{3,}$/,
+        message: /^[a-zA-Z ]{3,}$/,
+        prenume: /^[a-zA-Z]{3,}$/,
         email: /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
     }
 
@@ -42,7 +42,7 @@ export const Form: React.FC<PropsWithChildren> = (props: PropsWithChildren) =>{
 
         if(numeState){
                 const validateName = patter["userName"].test(numeState);
-                validateName ? setErrorNumeState("") : setErrorNumeState("Vous devez saisir un numéro valide")
+                validateName ? setErrorNumeState("") : setErrorNumeState("Vous devez saisir un mon valide")
         }
         else{
            
@@ -88,7 +88,7 @@ export const Form: React.FC<PropsWithChildren> = (props: PropsWithChildren) =>{
 
         if(telState){
                 const validateName = patter["telephone"].test(telState);
-                validateName ? setErrorTel("") : setErrorTel("Vous devez saisir un numéro valide")
+                validateName ? setErrorTel("") : setErrorTel("Vous devez saisir un numero valide")
         }
         else{
            
@@ -151,9 +151,9 @@ export const Form: React.FC<PropsWithChildren> = (props: PropsWithChildren) =>{
       console.log(form.current)
 
 
-      if(!patter["userName"].test(numeState)){setErrorNumeState("Vous devez avoir un email valide")}
+      if(!patter["userName"].test(numeState)){setErrorNumeState("Vous devez saisir un mon valide")}
       else if(!patter["email"].test(email)){setErrorState("Vous devez avoir un email valide")}
-     else if(!patter["telephone"].test(telState)){setErrorTel("Vous devez saisir un numéro valide")}
+     else if(!patter["telephone"].test(telState)){setErrorTel("Vous devez saisir mon numero valide")}
      else if(!patter["prenume"].test(prenumeState)){setErrorPrenume("Vous devez saisir un prénom valide")}
      else if(!patter["message"].test(messageState)){setErrorMessage("Vous devez entrer un message")}
       else{

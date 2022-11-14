@@ -22,7 +22,7 @@ export const Form = styled.form`
 
 background-color: ${ColorBg.primaryColor};
 color: white;
-margin-top: 30px;
+
 display: flex;
 flex-direction: column;
 align-items: center;

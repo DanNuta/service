@@ -9,18 +9,22 @@ type Props = {
 }
 
 
+
 export const Contact = styled.div`
 
 display: none;
 
 
 ${theme.breakpoints.up("md")}{
-
+    position: fixed;
+    box-shadow: 0px 2px 5px 0px rgba(247, 250, 248,0.15);
+    width: 100%;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 75px;
-    position: relative;
+   // position: relative;
     z-index:999;
     background-color: ${ColorBg.primaryColor};
     
@@ -36,6 +40,20 @@ ${theme.breakpoints.up("md")}{
         justify-content: center;
         gap: 10px;
         color: white;
+
+        .icon_facebook{
+          height: 32px;
+        }
+
+        .icon_tel{
+          height: 25px;
+        }
+
+        .icon_whatapp{
+          height: 24px;
+        }
+
+        
       }
     }
    
@@ -46,7 +64,7 @@ ${theme.breakpoints.up("md")}{
 
 export const Header = styled.header`
 position: relative;
-top: 25px;
+top: 100%;
 z-index: 10;
 height: 100%;
 padding: 0 20px;
@@ -63,10 +81,15 @@ padding: 0 20px;
 ${theme.breakpoints.up("md")}{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
   width: 90%; 
   max-width: 1660px;
   margin: auto;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
 }
 
 `
@@ -113,8 +136,10 @@ ${theme.breakpoints.up("md")}{
   display: flex;
   margin-top: 25px;
   position: absolute;
-  gap: 60px;
-  right: 0;
+  gap: 30px;
+  left: 0;
+  width: 100%;
+  justify-content: center;
 }
 
 `;
@@ -185,5 +210,11 @@ ${theme.breakpoints.up("md")}{
 
 
 export const LogoLi = styled.li`
+
+`;
+
+
+
+export const HrefElement = styled.a`
 
 `

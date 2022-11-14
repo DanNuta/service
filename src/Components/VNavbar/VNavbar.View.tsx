@@ -39,11 +39,11 @@ export const VNavbarView: React.FC<PropsWithChildren<Props>> = (props: PropsWith
       <Style.Contact>
 
       <ul>
-      <li><a target="_blank" href="https://www.facebook.com/VillefrancheReprogrammation"><img src={facebook} alt=""  /></a></li>
+          <li><Style.HrefElement className="icon_facebook" target="_blank" href="https://www.facebook.com/VillefrancheReprogrammation"><img src={facebook} alt=""  /></Style.HrefElement></li>
           <li><img src={email} alt="email"  />gowperformance@gmail.com</li>
-          <li><a href="tel:+33 667054384"><img src={tel} alt="telefon"  /></a></li>
-          <li><a href="https://wa.me/33 667054384" target="_blank"><img src={whatapp} alt="whatapp"  /></a></li>
-          <li><a href="tel:+33 667054384">+33 667054384</a></li>
+          <li><Style.HrefElement className="icon_tel" href="tel:+33 667054384"><img src={tel} alt="telefon"  /></Style.HrefElement></li>
+          <li><Style.HrefElement className="icon_whatapp" href="https://wa.me/33 667054384" target="_blank"><img src={whatapp} alt="whatapp"  /></Style.HrefElement></li>
+          <li><Style.HrefElement  href="tel:+33 667054384">+33 667054384</Style.HrefElement></li>
       </ul>
 
       </Style.Contact>

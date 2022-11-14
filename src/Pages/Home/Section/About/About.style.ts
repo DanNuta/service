@@ -4,27 +4,30 @@ import {theme} from "../../../../Css/BreackPoints";
 import { Width } from "../../../../Css/Varibla";
 
 
-export const About = styled.section`
+export const About = styled.div`
 
 padding: 0 20px;
-
-
+color: white;
 
 ${theme.breakpoints.up("md")}{
     display: flex;
     gap: 30px;
     width: 90%;
-   max-width: ${Width.maxWidth};
-    margin: 100px auto;
+    max-width: ${Width.maxWidth};
+    margin: auto;
+    
     padding: 0;
     align-items: center;
+    
 }
 
 
 .title_desktop{
+    color: white;
     display: block;
     ${theme.breakpoints.up("md")}{
-        display: none
+        display: none;
+        color: white;
     }
 }
 
@@ -36,6 +39,7 @@ ${theme.breakpoints.up("md")}{
 
 
 export const LeftPhoto = styled.div`
+
 
 margin: 20px 0;
 
@@ -54,14 +58,14 @@ img{
 `;
 
 export const RightPhoto = styled.div`
-
+color: white;
 ${theme.breakpoints.up("md")}{
     width: 50%;
 
 
     .about_text{
         margin: 40px 0;
-        color: ${ColorBg.primaryColor};
+       
     }
 }
 
@@ -72,7 +76,7 @@ ${theme.breakpoints.up("md")}{
 
     ${theme.breakpoints.up("md")}{
         display: block;
-        color: ${ColorBg.primaryColor};
+        
         
     }
 }
@@ -103,5 +107,10 @@ h1{
    
     
 }
+`;
 
-`
+
+export const BackgroundColor = styled.section`
+  background-color: ${ColorBg.primaryColor};
+  padding: 100px 0;
+`;

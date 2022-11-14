@@ -6,7 +6,7 @@ import { Width } from "../../../../Css/Varibla";
 
 export const Servicii = styled.section`
 
-margin-top: 30px;
+padding-top: 30px;
 background-color: ${ColorBg.primaryColor};
 color: white;
 padding: 20px 20px 30px 20px;

@@ -13,7 +13,6 @@ import img13 from "./galery/img13.jpg";
 import img14 from "./galery/img14.jpg";
 import img15 from "./galery/img15.jpg";
 import img16 from "./galery/img16.jpg";
-import img17 from "./galery/img17.png";
 import img18 from "./galery/img18.jpg";
 import img19 from "./galery/img19.jpg";
 import img20 from "./galery/img20.jpg";
@@ -46,7 +45,6 @@ export const galery = [
     img14,
     img15,
     img16,
-    img17, 
     img18,
     img19,
     img20,

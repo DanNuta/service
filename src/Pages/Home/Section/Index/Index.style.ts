@@ -20,7 +20,7 @@ export const SectionIndex = styled.section`
 height: 100vh;
 width: 100%;
 position: relative;
-top: -50px;
+//top: px;
 
 
 
@@ -246,10 +246,8 @@ export const ComponentsImgSlider = styled.div`
 
 
 export const DivImg = styled.div<Props>`
-   position: absolute;
    min-width: 100%;
    height: 100%;
-   top: -25px;
 
 img{
     width: 100%;

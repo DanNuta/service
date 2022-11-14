@@ -1,6 +1,7 @@
 
 import styled from "styled-components";
 import {theme} from "../../../../Css/BreackPoints";
+import {ColorBg} from "../../../../Css/Varibla";
 
 
 
@@ -11,6 +12,8 @@ type Props = {
 }
 
 export const SectionGalery = styled.section`
+background-color: ${ColorBg.primaryColor};
+color: white;
 .title{
     text-align: center;
     padding: 20px 0;
@@ -75,5 +78,11 @@ img{
     object-fit: cover;
     width: 100%;
 }
+`;
 
-`
+
+
+export const BackroundElement = styled.div`
+
+
+`;
