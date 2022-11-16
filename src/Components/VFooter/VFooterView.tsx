@@ -26,7 +26,7 @@ export const VFooter: React.FC<PropsWithChildren<Props>> = (props: PropsWithChil
 
 
             <Style.Map>
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2772.1334356975253!2d4.713428315538438!3d45.98856497911065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f485181a6422fd%3A0xf514453938dbd83e!2sRue%20de%20la%20Paix%2C%2069400%20Villefranche-sur-Sa%C3%B4ne%2C%20Fran%C5%A3a!5e0!3m2!1sro!2s!4v1667598859379!5m2!1sro!2s"></iframe>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1TqoUaL0t0XP6MQHZLY087Anq8Cfm6X0&ehbc=2E312F" ></iframe>
             </Style.Map>
 
 

@@ -59,13 +59,26 @@ img{
 
 export const RightPhoto = styled.div`
 color: white;
+
 ${theme.breakpoints.up("md")}{
     width: 50%;
 
+    .title{
+        text-align: center;
+    }
+
 
     .about_text{
-        margin: 40px 0;
+        margin: 20px 0;
+        font-size: 24px;
        
+    }
+
+    .motto{
+        font-style: italic;
+        font-size: 22px;
+        text-align: end;
+        margin-top: 70px;
     }
 }
 

@@ -20,9 +20,9 @@ export const AboutView: React.FC = () =>{
 
                     <Styled.RightPhoto>
                         <h2 className="title">Qui sommes-nous?</h2>
-                        <p className="about_text">GowPerformance , spécialiste en reprogrammation moteur, optimisation moteur, conversion éthanol E85, nous intervenons quel que soit votre véhicule ou le type de motorisation, essence, diesel et hybride.
-Nous effectuons toutes nos reprogrammations sur-mesure artisanale, en utilisant des outils et logiciels professionnels certifiés et reconnus, afin d'étendre nos prestations sur une large gamme de véhicules. Nos optimisations moteur augmentent non seulement l'agrément de conduite, mais permettent aussi de faire une économie de carburant. La conversion superéthanol E85 des voitures essences offre des avantages considérables avec un amortissement de l'investissement rapidement.
-</p>
+                        <p className="about_text">GowPerformance , spécialiste en reprogrammation moteur, optimisation moteur, conversion éthanol E85, nous intervenons quel que soit votre véhicule ou le type de motorisation, essence, diesel et hybride. Nous effectuons toutes nos reprogrammations sur-mesure artisanale, en utilisant des outils et logiciels professionnels certifiés et reconnus, afin d'étendre nos prestations sur une large gamme de véhicules. Nos optimisations moteur augmentent non seulement l'agrément de conduite, mais permettent aussi de faire une économie de carburant. La conversion superéthanol E85 des voitures essences offre des avantages considérables avec un amortissement de l'investissement rapidement.</p>
+                        <p className="motto">"Avec GowPerformance, prenez la route en toute confiance !"</p>
+
                     </Styled.RightPhoto>
 
                 </Styled.About>

@@ -50,8 +50,7 @@ export const Index: React.FC = () => {
         <Style.TextHover>
           <Style.TextElement>
             <h1>
-               GowPerformance spécialiste en reprogrammation moteur, optimisation moteur, conversion éthanol E85
-            </h1>
+               GowPerformance</h1>
 
             <p className="motto">GowPerformance Donnez une seconde chance à votre voiture </p>
 

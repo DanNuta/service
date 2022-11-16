@@ -40,6 +40,7 @@ export const MarginElement = styled.div`
 .motto{
     text-align: center;
     margin-top: 20px;
+    font-style: italic;
 }
 
    ${theme.breakpoints.up("md")}{

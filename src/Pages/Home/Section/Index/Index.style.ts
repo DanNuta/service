@@ -34,11 +34,11 @@ position: relative;
 
 export const TextHover = styled.div`
 position: absolute;
-top: 50%;
+top: 0;
 bottom: 0;
 right: 0;
-left: 0;
-transform: translateY(-50%);
+left: 0%;
+
 padding: 0 20px ;
 
 ${theme.breakpoints.up("md")}{
@@ -87,18 +87,21 @@ ${theme.breakpoints.up("md")}{
 
 
 export const TextElement = styled.div`
-
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
 
 .motto{
     color: white;
     font-size: 24px;
     font-style: italic;
-    margin-bottom: 30px;
+    margin-bottom: 120px;
 }
 
 ${theme.breakpoints.up("md")}{
     
-    width: 70%;
     padding: 0 20px;
     
 
