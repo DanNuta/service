@@ -21,7 +21,7 @@ padding: 0 20px;
 
 
 export const Map = styled.div`
-height: 150px;
+height: 300px;
 width: 100%;
 border: 0;
 margin-bottom: 45px;
