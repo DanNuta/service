@@ -11,6 +11,9 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
   }
 
   li{
@@ -32,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
 
 
   h1{
-
+    font-family: 'Roboto', sans-serif;
     ${theme.breakpoints.up("md")}{
       font-family: 'Roboto', sans-serif;
       font-size: 45px;
@@ -53,6 +56,8 @@ export const GlobalStyle = createGlobalStyle`
   
 
   h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     ${theme.breakpoints.up("md")}{
       font-size: 40px;
       font-family: 'Rubik', sans-serif;

@@ -47,42 +47,6 @@ ${theme.breakpoints.up("md")}{
     max-width: ${Width.maxWidth};
 }
 
-
-
-.btn_desk{
-    display: none;
-
-    ${theme.breakpoints.up("md")}{
-        display: block;
-       
-    }
-}
-
-${theme.breakpoints.up("md")}{
-    display: flex;
-    align-items: center;
-    padding: 0;
-   
-}
-
-
-.btn_element{
-    display: none;
-
-    ${theme.breakpoints.up("md")}{
-        display: block;
-       
-    }
-}
-
-.btn{
-    margin-top: 20px;
-
-    ${theme.breakpoints.up("md")}{
-        display: none;
-    }
-}
-
 `;
 
 
@@ -92,113 +56,64 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 width: 100%;
-
-.motto{
-    color: white;
-    font-size: 24px;
-    font-style: italic;
-    margin-bottom: 120px;
-}
-
-${theme.breakpoints.up("md")}{
-    
-    padding: 0 20px;
-    
-
-    h1{
-        margin-bottom: 55px;
-    }
-}
+gap: 80px;
+height: 100%;
 
 
 h1{
     color: white;
+    font-size: 40px;
     
-
 }
 
-`;
-
-
-
-
-export const TouchEventElement = styled.div<Props>`
-display: inline-flex;
-gap: 20px;
-transform: ${props => `translate(-${props.move}px)`};
-padding: 20px 0;
-
-${theme.breakpoints.up("md")}{
-    position: absolute;
-    right: 0;
-    width: 45%;
-    display: flex;
+.motto{
+    color: white;
+    text-align: center;
+    font-size: 25px;
     
-    
-   
 }
 
 
-.arrow_element{
-    display: none;
-
-    ${theme.breakpoints.up("md")}{
-        display: block;
-        position: absolute;
-        background-color: red;
-        height: 100px;
-        z-index: 999;
+.btn_desk{
        
-        
-
-        img{
-        
-        &:last-child{
-            position: absolute;
-            left: 100px;
-            background-color: green;
-            top: 50%;
-            transform: translateY(50%);
-        }
-
-       }
     }
-}
-
-`;
-
-
-
-export const ImgTouchElement = styled.div<Props>`
-display: inline-block;
-width: 100px;
-height: 100px;
-background-color: green;
-
-
-
-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
 
 ${theme.breakpoints.up("md")}{
-    min-width: 220px;
-    height: 240px;
-    display: block;
+    
+    padding: 0 20px;
+    gap: 0;
+    
+    
 
-    img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+    h1{
+        font-size: 110px;
+        margin: 60px 0 50px 0;
+    }
+
+    .motto{
+        font-size: 35px;
+        color: white;
+        font-size: 35px;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .btn_desk{
+        margin-top: 180px;
     }
 }
 
 
-
 `;
+
+
+
+
+
+
+
+
+
 
 
 

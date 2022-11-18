@@ -29,7 +29,7 @@ export const Index: React.FC = () => {
 
 
 
-  // setPxTouchState(prev => prev = move);
+
 
   
 
@@ -49,8 +49,8 @@ export const Index: React.FC = () => {
 
         <Style.TextHover>
           <Style.TextElement>
-            <h1>
-               GowPerformance</h1>
+
+            <h1>GowPerformance</h1>
 
             <p className="motto">GowPerformance Donnez une seconde chance à votre voiture </p>
 
@@ -64,11 +64,7 @@ export const Index: React.FC = () => {
 
       
 
-          <div className="btn">
-            <VButton color="black" bg="white" href="#Contacte">
-              Contacteaza-ne
-            </VButton>
-          </div>
+          
         </Style.TextHover>
 
         

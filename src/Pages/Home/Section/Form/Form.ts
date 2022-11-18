@@ -56,6 +56,7 @@ padding: 0  20px 45px 20px;
             display: block;
             margin-bottom: 100px;
             font-style: italic;
+            font-size: 20px;
             
         }
 
@@ -102,8 +103,16 @@ color: white;
 border: 1px solid white;
 cursor: pointer;
 transition: .3s;
+width: 100%;
+
+${theme.breakpoints.up("md")}{
+    width:  200px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
 &:hover{
-    
     color: ${ColorBg.primaryColor};
     box-shadow: inset 240px 0 0 0 white;
     

@@ -37,7 +37,7 @@ export const VFooter: React.FC<PropsWithChildren<Props>> = (props: PropsWithChil
 
                 <ul>
                     <li className="logo">
-                        <Style.Href className="logo" href="/"><img src={logo} alt="logo" /></Style.Href>
+                        <Style.Href className="logo" href="/#Accueil"><img src={logo} alt="logo" /></Style.Href>
                     </li>
                 </ul>
 

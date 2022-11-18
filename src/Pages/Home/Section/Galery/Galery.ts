@@ -59,11 +59,15 @@ ${theme.breakpoints.up("md")}{
 
 export const ImgesItem = styled.div<Props>`
 min-width: 100%;
+width: 90%;
+padding: 0 20px;
 aspect-ratio: 1/1;
+
 
 ${theme.breakpoints.up("md")}{
     transition: .5s;
     height: 500px;
+    padding: 0;
     &:hover{
         transform: scale(1.2);
         transition: .5s;
@@ -77,6 +81,13 @@ img{
     height: 100%;
     object-fit: cover;
     width: 100%;
+    box-shadow: 0px 8px 10px 0px rgba(247, 250, 248,0.15);
+
+   
+
+    ${theme.breakpoints.up("md")}{
+        width: 100%;
+    }
 }
 `;
 

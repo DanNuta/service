@@ -15,7 +15,6 @@ ${theme.breakpoints.up("md")}{
     width: 90%;
     max-width: ${Width.maxWidth};
     margin: auto;
-    
     padding: 0;
     align-items: center;
     
@@ -70,6 +69,7 @@ color: white;
 
 .about_text{
     font-size: 20px;
+    text-align: center;
 }
 
 ${theme.breakpoints.up("md")}{
@@ -83,6 +83,7 @@ ${theme.breakpoints.up("md")}{
     .about_text{
         margin: 20px 0;
         font-size: 24px;
+       
        
     }
 
@@ -137,5 +138,5 @@ h1{
 
 export const BackgroundColor = styled.section`
   background-color: ${ColorBg.primaryColor};
-  padding: 100px 0;
+  padding: 50px 0;
 `;
