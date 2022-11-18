@@ -26,7 +26,7 @@ export const VFooter: React.FC<PropsWithChildren<Props>> = (props: PropsWithChil
 
 
             <Style.Map>
-            <iframe src="https://www.google.com/maps/d/embed?mid=1TqoUaL0t0XP6MQHZLY087Anq8Cfm6X0&ehbc=2E312F" ></iframe>
+            <iframe src="https://my.atlistmaps.com/map/f35a1b2a-70a5-497e-adeb-92cf257b843a?share=true"></iframe>
             </Style.Map>
 
 

@@ -52,7 +52,7 @@ export const Index: React.FC = () => {
 
             <h1>GowPerformance</h1>
 
-            <p className="motto">GowPerformance Donnez une seconde chance à votre voiture </p>
+            <p className="motto">Donnez une seconde chance à votre voiture </p>
 
             <div className="btn_desk">
               <VButton color="black" bg="white" href="#Contactez-nous">

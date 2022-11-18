@@ -62,7 +62,7 @@ height: 100%;
 
 h1{
     color: white;
-    font-size: 40px;
+    font-size: 35px;
     
 }
 
@@ -70,6 +70,7 @@ h1{
     color: white;
     text-align: center;
     font-size: 25px;
+    font-style: italic;
     
 }
 
