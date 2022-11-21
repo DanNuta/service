@@ -49,11 +49,12 @@ export const FormView: React.FC<PropsWithChildren<Props>> = (props: PropsWithChi
             <div className="form_input">
                     <div>
                         <InputView name="nume" error={props.errorNume}  value={props.nume}  onChange={(e) => props.numeFn(e)} labelText="Votre nom" placeholder="Votre nom" type="text" id="Nume"/>
-                        <InputView name="email" error={props.errorEmail} value={props.email}  onChange={(e) => props.emailFn(e)} labelText="Votre email" placeholder="Votre email" type="email" id="Email"/>
+                        <InputView name="prenume" error={props.errorPrenume} value={props.prenume}  onChange={(e) => props.prenumeFn(e)} labelText="Votre prénom " placeholder="Votre prénom " type="text" id="prenume"/>
                     </div>
 
                     <div>
-                        <InputView name="prenume" error={props.errorPrenume} value={props.prenume}  onChange={(e) => props.prenumeFn(e)} labelText="Votre prénom " placeholder="Votre prénom " type="text" id="prenume"/>
+                        
+                        <InputView name="email" error={props.errorEmail} value={props.email}  onChange={(e) => props.emailFn(e)} labelText="Votre email" placeholder="Votre email" type="email" id="Email"/>
                         <InputView name="telefon" error={props.errorTel}  value={props.telephon} onChange={(e) => props.telephonFn(e)} labelText="Votre téléphone " placeholder="Votre téléphone " type="tel" id="Telefon"/>
                     </div>
 
